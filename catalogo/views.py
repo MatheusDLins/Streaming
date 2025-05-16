@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from rest_framework import viewsets
 from .models import Categoria, Conteudo
-from serializers import CategoriaSerializer, ConteudoSerializer
+from .serializers import CategoriaSerializer, ConteudoSerializer
 
 class ConteudoViewSet(viewsets.ModelViewSet):
     queryset = Conteudo.objects.all()

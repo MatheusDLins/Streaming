@@ -6,7 +6,7 @@ class CategoriaSerializer(serializers.ModelSerializer):
         model = Categoria
         fields = '__all__'
 
-class ConteudoSerializer(serializers.modelSerializer):
+class ConteudoSerializer(serializers.ModelSerializer):
     categoria = CategoriaSerializer()
 
     class Meta:
